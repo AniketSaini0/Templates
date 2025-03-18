@@ -10,9 +10,9 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section name="Contact" className="py-12 bg-black">
+    <section name="Contact" className="py-12 bg-black md:px-44">
       <div className="px-4 md:px-6">
-        <h2 className="text-2xl text-white font-bold tracking-wide sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl text-white font-bold tracking-wide sm:text-4xl md:text-4xl text-center mb-8">
           Contact Us
         </h2>
 

@@ -6,10 +6,10 @@ export default function MembershipPlans() {
   return (
     <section
       name="Membership-Plans"
-      className=" relative py-6 bg-black text-white container mx-auto px-4 md:px-6 w-full max-w-screen-xl"
+      className=" relative md:px-32 py-6 bg-black text-white container mx-auto px-4 w-full max-w-screen-xl"
     >
       <div className="flex flex-col">
-        <h2 className="text-3xl tracking-wide font-bold font-mono sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl tracking-wide font-bold font-mono sm:text-4xl md:text-4xl text-center mb-8">
           PLANS
         </h2>
 
@@ -19,7 +19,7 @@ export default function MembershipPlans() {
             {membershipPlans.map((plan, index) => (
               <div
                 key={index}
-                className="bg-white flex flex-col justify-between shadow-lg p-6 overflow-hidden min-w-[300px] sm:min-w-0"
+                className="bg-white flex flex-col justify-between shadow-lg px-4 pt-4 pb-3 overflow-hidden min-w-[300px] sm:min-w-0"
               >
                 <div className="text-center py-2 bg-black px-2">
                   <h3 className="text-2xl text-white font-bold">
@@ -37,7 +37,7 @@ export default function MembershipPlans() {
                   {plan.features.map((feature, featureIndex) => (
                     <li
                       key={featureIndex}
-                      className="flex items-center justify-center w-full border-b border-gray-400 pb-3 gap-2 text-lg text-gray-800"
+                      className="flex items-center justify-center w-full border-b border-gray-400 pb-2 text-sm gap-3 text-gray-800"
                     >
                       {feature.included ? (
                         <CheckCircle className="text-green-500 w-5 h-5" />

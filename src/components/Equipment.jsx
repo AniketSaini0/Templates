@@ -15,7 +15,7 @@ export default function Equipment() {
 
       {/* Content Wrapper */}
       <div className="relative px-4 md:px-6 z-10">
-        <h2 className="text-2xl text-gray-200 font-bold tracking-wide sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl text-gray-200 font-bold tracking-wide sm:text-4xl md:text-4xl text-center mb-8">
           Our Equipments
         </h2>
 

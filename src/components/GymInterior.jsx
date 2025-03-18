@@ -5,7 +5,7 @@ export default function GymInterior() {
   return (
     <section name="Gym-Interior" className="py-12 bg-black">
       <div className="container px-4 md:px-6">
-        <h2 className="text-2xl text-gray-100 font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl text-gray-100 font-bold tracking-tighter sm:text-4xl md:text-4xl text-center mb-8">
           What we provide
         </h2>
         <div className="overflow-x-auto sm:overflow-hidden">
@@ -21,7 +21,7 @@ export default function GymInterior() {
                   className="w-full h-24 object-cover bg-center bg-no-repeat"
                 />
                 <div className="p-4 m-auto">
-                  <h3 className="text-xl flex justify-center font-bold text-gray-100">
+                  <h3 className="text-lg flex justify-center font-bold text-gray-100">
                     {image.alt}
                   </h3>
                 </div>

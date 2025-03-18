@@ -3,11 +3,14 @@ import { competitions, instagramLink } from "../assets/imageLinks";
 
 export default function Competitions() {
   return (
-    <section name="Competitions" className=" relative py-12 bg-gray-950">
+    <section
+      name="Competitions"
+      className=" relative py-12 md:px-32 bg-gray-950"
+    >
       <div className="absolute -z-20- left-0 top-0 min-w-screen min-h-2/12 bg-gradient-to-b from-white via-transparent to-transparent"></div>
 
       <div className="container px-4 md:px-6">
-        <h2 className="text-2xl pt-1.5 tracking-wide text-gray-100 font-bold  sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl pt-1.5 tracking-wide text-gray-100 font-bold  sm:text-4xl md:text-4xl text-center mb-8">
           Competitions & Achievements
         </h2>
 
@@ -17,8 +20,8 @@ export default function Competitions() {
               key={index}
               className="bg-white rounded-lg shadow-md p-6 space-y-2"
             >
-              <h3 className="text-xl font-bold">{comp.name}</h3>
-              <p>{comp.details}</p>
+              <h3 className="text-md font-bold">{comp.name}</h3>
+              <p className="text-sm">{comp.details}</p>
             </div>
           ))}
         </div>

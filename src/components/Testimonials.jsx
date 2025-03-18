@@ -3,9 +3,9 @@ import { testimonials } from "../assets/imageLinks";
 
 export default function Testimonials() {
   return (
-    <section name="Testimonials" className="py-12 bg-gray-100">
+    <section name="Testimonials" className="py-12 md:px-32 bg-gray-100">
       <div className="container px-4 md:px-6">
-        <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-4xl text-center mb-8">
           Testimonials & Success Stories
         </h2>
 
@@ -22,8 +22,8 @@ export default function Testimonials() {
                   aria-label={testimonial.name}
                   className="w-16 h-16 rounded-full object-cover mb-2"
                 /> */}
-                <h3 className="text-xl font-bold">{testimonial.name}</h3>
-                <p className="text-gray-500">{testimonial.review}</p>
+                <h3 className="text-md font-bold">{testimonial.name}</h3>
+                <p className="text-gray-500 text-sm">{testimonial.review}</p>
               </div>
             ))}
           </div>

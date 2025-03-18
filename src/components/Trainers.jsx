@@ -3,9 +3,9 @@ import { trainers } from "../assets/imageLinks";
 
 export default function Trainers() {
   return (
-    <section name="Trainers" className="py-12 bg-gray-950">
+    <section name="Trainers" className="py-12 bg-gray-950 md:px-32">
       <div className="container px-4 md:px-6">
-        <h2 className="text-2xl text-gray-200 font-mono tracking-wider font-bold sm:text-4xl md:text-5xl text-center mb-8">
+        <h2 className="text-2xl text-gray-200 font-mono tracking-wider font-bold sm:text-4xl md:text-4xl text-center mb-8">
           OUR TRAINERS
         </h2>
         <div
@@ -20,16 +20,18 @@ export default function Trainers() {
           {trainers.map((trainer, index) => (
             <div
               key={index}
-              className="sm:flex sm:space-x-6 bg-white rounded-lg shadow-md p-6 space-y-2"
+              className="flex flex-row space-x-6 items-start bg-white rounded-lg shadow-md p-6 space-y-2"
             >
-              <img
-                src={`${trainer.image}`}
-                alt={trainer.name}
-                className="w-16 h-16 rounded-full object-cover mb-2"
-              />
               <div>
-                <h3 className="text-xl font-bold">{trainer.name}</h3>
-                <p className="text-gray-500">{trainer.bio}</p>
+                <img
+                  src={`${trainer.image}`}
+                  alt={trainer.name}
+                  className="w-16 h-16 rounded-full object-cover mb-2"
+                />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-lg font-bold">{trainer.name}</h3>
+                <p className="text-gray-500 text-sm">{trainer.bio}</p>
               </div>
             </div>
           ))}

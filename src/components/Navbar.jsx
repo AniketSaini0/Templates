@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <div
-      className={`fixed z-50 py-1 top-0 w-full h-[50px] px-5 flex items-center  transition-all duration-500 ${
+      className={`fixed z-50 py-1 top-0 w-full h-[70px] px-5 flex items-center  transition-all duration-500 ${
         show ? "bg-black" : "bg-transparent"
       }`}
     >

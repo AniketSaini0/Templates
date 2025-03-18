@@ -14,7 +14,7 @@ export default function MembershipPlans() {
         </h2>
 
         {/* Wrapper to enable horizontal scroll on small screens */}
-        <div className="overflow-x-auto z-50 sm:overflow-hidden">
+        <div className="overflow-x-auto z-30 sm:overflow-hidden">
           <div className="grid snap-x snap-mandatory scrollbar-hide pb-4 grid-flow-col sm:grid-flow-row grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 justify-items-stretch">
             {membershipPlans.map((plan, index) => (
               <div

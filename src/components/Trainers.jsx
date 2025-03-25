@@ -27,6 +27,7 @@ export default function Trainers() {
                   src={`${trainer.image}`}
                   alt={trainer.name}
                   className="w-16 h-16 rounded-full object-cover mb-2"
+                  loading="lazy"
                 />
               </div>
               <div className="flex flex-col">

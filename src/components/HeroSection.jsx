@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { banners } from "../assets/imageLinks";
+import { CircleChevronLeft, CircleChevronRight } from "lucide-react";
 
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,7 +9,7 @@ export default function HeroSection() {
   useEffect(() => {
     const timer = setTimeout(() => {
       nextSlide();
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [currentIndex]);
@@ -38,7 +39,7 @@ export default function HeroSection() {
   return (
     <section
       name="Herosection"
-      className="relative min-h-[75vh] sm:h-screen overflow-hidden"
+      className="relative w-full min-h-[75vh] sm:h-[90vh] overflow-hidden"
     >
       {/* Parallax Image Wrapper */}
       <div className="absolute inset-0 w-full h-full object-cover bg-no-repeat">
@@ -52,6 +53,7 @@ export default function HeroSection() {
               backgroundImage: `url("${url}")`,
               transform: `translateY(${scrollY * 0.3}px)`, // Parallax Effect
             }}
+            fetchPriority={i === 0 ? "high" : "auto"}
           ></div>
         ))}
       </div>
@@ -69,24 +71,24 @@ export default function HeroSection() {
             Your Journey to Fitness Starts Here
           </p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Join Now
+            Call Us
           </button>
         </div>
       </div>
 
       {/* Navigation Buttons */}
-      <div className="absolute bottom-2/4 left-0 right-0 flex justify-between">
+      <div className="relative">
         <button
-          className="bg-transparent hover:bg-gray-200 text-gray-400 font-bold py-2 px-4 rounded mr-2"
+          className="absolute right-24 top-[80vh] bg-white rounded-full p-2 shadow-lg z-20"
           onClick={prevSlide}
         >
-          &lt;
+          <CircleChevronLeft size={28} />
         </button>
         <button
-          className="bg-transparent hover:bg-gray-200 text-gray-400 font-bold py-2 px-4 rounded"
+          className="absolute right-6 top-[80vh] bg-white rounded-full p-2 shadow-lg z-40"
           onClick={nextSlide}
         >
-          &gt;
+          <CircleChevronRight size={28} />
         </button>
       </div>
 

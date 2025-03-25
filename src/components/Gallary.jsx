@@ -25,7 +25,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="p-6 relative">
+    <div className="p-6 relative w-full">
       {/* <div className="absolute inset-0 -z-20- left-0 bottom-0 min-w-screen min-h-5/6 bg-gradient-to-b from-black opacity-40 via-transparent to-transparent"></div> */}
       {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
 

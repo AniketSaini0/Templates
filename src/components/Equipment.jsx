@@ -29,7 +29,9 @@ export default function Equipment() {
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-full h-32 object-cover"
+                className="w-full h-32 object-cover scrollbar-hide"
+                loading="lazy"
+                fetchPriority={index > 5 ? `low` : `high`}
               />
               <div className="p-4 text-center">
                 <h3 className="text-xl font-bold">{item.alt}</h3>

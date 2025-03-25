@@ -28,7 +28,7 @@ function Navbar() {
           show ? "opacity-100" : "opacity-0"
         } `}
         src={logo}
-        alt="netflix-logo"
+        alt="gym-logo"
       />
     </div>
   );

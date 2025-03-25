@@ -6,7 +6,7 @@ export default function MembershipPlans() {
   return (
     <section
       name="Membership-Plans"
-      className=" relative md:px-32 py-6 bg-black text-white container mx-auto px-4 w-full max-w-screen-xl"
+      className=" relative md:px-32 py-6 bg-black text-white container px-4 min-w-full"
     >
       <div className="flex flex-col">
         <h2 className="text-2xl tracking-wide font-bold font-mono sm:text-4xl md:text-4xl text-center mb-8">
@@ -57,7 +57,7 @@ export default function MembershipPlans() {
             ))}
           </div>
         </div>
-        <div className="absolute -z-20- left-0 bottom-0 min-w-screen min-h-5/6 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+        <div className="absolute -z-20- left-0 bottom-0 min-w-full min-h-5/6 bg-gradient-to-t from-white via-transparent to-transparent"></div>
       </div>
     </section>
   );
